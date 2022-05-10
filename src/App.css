@@ -1,0 +1,14 @@
+.todolist {
+  background-color: var(--color-main-bg);
+}
+
+.todolist.light-mood {
+  background-color: var(--color-main-bg-lg);
+}
+
+.header-bk {
+  background-image: url(/src/pictures/todoListBackrouand.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

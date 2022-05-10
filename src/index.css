@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: var(--font-family);
+
+  transition: all .3s ease-in-out;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Manrope", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --font-family: "Manrope", sans-serif;
+/* normal mood*/
+  --color-text: #ffffff;
+  --color-subtext: #d6d6d6;
+
+  --color-main-bg: #171723;
+  --color-content-bg: #24273d;
+
+  --color-border: #ffffff2e;
+
+/* light mood */
+  --color-text-lg: #000000;
+  --color-subtext-lg: #383838;
+
+  --color-main-bg-lg: #a6a6bb;
+  --color-content-bg-lg: #e0e0e0;
+
+  --color-border-lg: #828282d9;
+
+}
