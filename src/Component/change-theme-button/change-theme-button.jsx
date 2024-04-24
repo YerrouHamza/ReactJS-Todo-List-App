@@ -11,7 +11,7 @@ console.log(theme);
 
   return (
     <button className='todolist-changethemebutton' onClick={changeTheme}>
-      {theme ? <i class="fa-regular fa-sun"></i> : <i className="fa-regular fa-moon"></i>}
+      {theme ? <i className="fa-regular fa-sun"></i> : <i className="fa-regular fa-moon"></i>}
     </button>
   )
 }

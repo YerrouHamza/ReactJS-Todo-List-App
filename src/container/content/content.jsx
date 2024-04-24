@@ -34,7 +34,7 @@ function TodoForm({addNewTodo}){
             />
             <button className='todolist__content-mainform__addbutton' type='submite' onClick={HandelSubmite}>
                 <div>
-                    <i class="fa-solid fa-plus"></i>
+                    <i className="fa-solid fa-plus"></i>
                 </div>
             </button>
         </form>
@@ -55,8 +55,8 @@ function TodoList({index, todo, completedTodo, RemoveTodo}) {
     return <li key={index} className={completedCondition}>
         <p>{todo.text}</p>
         <div className='todolist__content-list__item-buttons'>
-            <button style={todo.isCompleted ? styleRed : null} onClick={() => RemoveTodo(index)}><i class="fa-regular fa-trash-can"></i></button>
-            <button onClick={() => completedTodo(index)}>{todo.isCompleted === false ? <i class="fa-solid fa-check"></i> : <i class="fa-solid fa-x"></i>}</button>
+            <button style={todo.isCompleted ? styleRed : null} onClick={() => RemoveTodo(index)}><i className="fa-regular fa-trash-can"></i></button>
+            <button onClick={() => completedTodo(index)}>{todo.isCompleted === false ? <i className="fa-solid fa-check"></i> : <i className="fa-solid fa-x"></i>}</button>
         </div>
     </li>
 }
