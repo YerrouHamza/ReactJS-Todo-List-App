@@ -3,11 +3,9 @@ import React from 'react'
 
 export const ChangeThemeButton = ({theme, setTheme}) => {
 
-const changeTheme = () => {
-  setTheme(!theme);
-}
-
-console.log(theme);
+  const changeTheme = () => {
+    setTheme(!theme);
+  }
 
   return (
     <button className='todolist-changethemebutton' onClick={changeTheme}>

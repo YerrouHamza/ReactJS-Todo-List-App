@@ -1,7 +1,7 @@
 .todolist-header {
   width: 100%;
   height: 45vh;
-  color: var(--color-text);
+  /* color: var(--color-text); */
 
   padding-top: 100px;
   display: flex;
@@ -30,17 +30,9 @@
 /* styling for theme button */
 .todolist-changethemebutton {
   font-size: 25px;
-  color: var(--color-text);
+  color: #fff;
   background-color: transparent;
   border: none;
 
   cursor: pointer;
 }
-
-
-
-/* styling in light mood */
-  /* styling for theme button */
-    .light-mood .todolist-changethemebutton {
-      color: var(--color-text-lg);
-    }
