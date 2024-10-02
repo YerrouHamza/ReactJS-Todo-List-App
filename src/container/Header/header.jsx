@@ -11,7 +11,7 @@ const Header = ({theme, setTheme}) => {
   return (
     <div className='todolist-header header-bk'>
       <div className='todolist-header__content'>
-          <h2 className="todolist-header__content-title">TODO</h2>
+          <h2 className="todolist-header__content-title" title='todo app title' data-testId="header-title">TODO</h2>
           <ChangeThemeButton theme={theme} setTheme={setTheme} />
       </div>
     </div>
