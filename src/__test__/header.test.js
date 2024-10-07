@@ -36,4 +36,25 @@ describe('Header Test', () => {
         const ElemetById = screen.getByTestId('header-title')
         expect(ElemetById).toBeInTheDocument();
     })
+
+    // test with find by
+    test('Title is It "TODO" Await', async () => {
+        render(<Headre />)
+        const ElementText = await screen.findByText(/todo/i)
+        expect(ElementText).toBeInTheDocument();
+    })
+
+    // test with query by for not found
+    test('Title is not found', () => {
+        render(<Headre />)
+        const ElementText = screen.queryByText(/not/i)
+        expect(ElementText).not.toBeInTheDocument();
+    })
+
+    // test by using get all by
+    test('heading is exist only 1', () => {
+        render(<Headre />)
+        const ElementRole = screen.getAllByRole('heading')
+        expect(ElementRole.length).toBe(1);
+    })
 })
