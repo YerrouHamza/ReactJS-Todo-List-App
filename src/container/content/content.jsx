@@ -103,7 +103,7 @@ const TodoContent = ({theme}) => {
                 )}
             </ul>
             <div className="todolist__content-option">
-                <ListCount todos={todos} />
+                <ListCount todoCount={todos.length} />
 
                 <div className="todolist__content-option__filter">
                     <Filter 

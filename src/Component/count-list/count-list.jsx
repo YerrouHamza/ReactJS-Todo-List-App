@@ -1,10 +1,12 @@
 import React from "react";
 
 
-function ListCount({todos}){
+function ListCount({todoCount}){
+    console.log(todoCount);
+    
     
     return <div className="todolist__content-option__count">
-        <p>{todos.length} items left</p>
+        {todoCount !== 0 ? <p>{todoCount} {todoCount <= 1 ? 'Item' : 'Items'} left</p> : <p>Nothing to do</p>}
     </div>
 }
 
